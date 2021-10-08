@@ -1,0 +1,38 @@
+body {
+
+    display: grid;
+   /*  grid-template-columns: 200px 1fr; */
+    grid-template-areas: 
+    'header header'
+    'main main'
+    'footer footer';
+
+}
+
+/* Início do Menu */
+header{
+    grid-area: header;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color:#212529;
+
+        .logo{
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .btn{
+            color: white;
+            border-color: white;
+        }
+
+        .btn:hover{
+            background-color: #706779;
+            border-color: none;
+            transition-duration: .3s;
+            transition-timing-function: ease-in-out;
+        }
+}
+
+/* Fim do Menu */
