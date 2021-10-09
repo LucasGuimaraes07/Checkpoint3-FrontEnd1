@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #242633;
+}
+
 /* Início do Menu */
 header{
     max-width: 96px;
@@ -51,6 +55,11 @@ header{
 main {
     margin-top: 96px;
 
+    section .section-title {
+        margin-bottom: 40px;
+        color: #fff;
+    }
+
     /* Inicio da estilização do banner */
 
     /* Fim da estilização do banner */
@@ -61,6 +70,17 @@ main {
 
     /* Inicio da estilização do filmes */
 
+    .movies {
+
+        .movies-container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+    
     /* Fim da estilização do filmes */
 
     /* Inicio da estilização da equipe */
