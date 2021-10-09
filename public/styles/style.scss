@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #242633;
 }
@@ -61,17 +65,80 @@ main {
     }
 
     /* Inicio da estilização do banner */
+    .banner{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        color: white;
+        /* parallax */
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
 
+       .texto{
+         width: 600px;
+         position: absolute;
+         top: 35%;
+         padding: 20px;
+         margin: 20px;
+         box-sizing: border-box;
+         z-index: 199;
+         font-size: 18px;
+        }
+
+       button{
+        position: absolute;
+        top: 55%;
+        padding: 10px;
+        margin: 40px;
+        box-sizing: border-box;
+        z-index: 199;
+        }
+
+        button:hover{
+            background-color: #a552f3;
+            border: none;
+            transition-duration: .3s;
+            transition-timing-function: ease-in-out;
+        }
+
+    }
     /* Fim da estilização do banner */
 
     /* Inicio da estilização do sobre */
+    .sobre{
+        background-color: #242633;
+        padding: 40px;
+        margin: 40px;
+        position: absolute;
+        top: 1000px;
+        box-sizing: border-box;
+        
+        color: white;
+        z-index: 200;
+      
 
+        .sobre h2{
+            width: 1296px;
+        }
+
+        .sobre p{
+            width: 900px;
+            font-size: 20px;
+        }
+    }
     /* Fim da estilização do sobre */
 
     /* Inicio da estilização do filmes */
 
     .movies {
-
+        background-color: #242633;
+        position: absolute;
+        top: 1290px;
+        
         .movies-container{
             display: flex;
             flex-wrap: wrap;
