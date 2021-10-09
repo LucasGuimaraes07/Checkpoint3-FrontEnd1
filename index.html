@@ -9,51 +9,52 @@
     
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 
     <header>
     <!-- Início do Menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <nav class="navbar fixed-top navbar-dark bg-dark row align-items-start">
 
-      <div class="logo">
-        <img src="/Checkpoint3-FrontEnd1/public/assets/harry-potter-logo.png" alt="harry-potter-logo"  width="338" height="114">
-      </div>
+        <div class="container-md">
 
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Sobre</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Filmes
-              </a>
-              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink bg-dark">
-                <li><a class="dropdown-item active bg-dark" href="#">A Pedra Filosofal</a></li>
-                <li><a class="dropdown-item active bg-dark" href="#">A Câmara Secreta</a></li>
-                <li><a class="dropdown-item active bg-dark" href="#">O Prisioneiro de Azkaban</a></li>
-                <li><a class="dropdown-item active bg-dark" href="#">O Cálice de Fogo</a></li>
-                <li><a class="dropdown-item active bg-dark" href="#">A Ordem da Fênix</a></li>
-                <li><a class="dropdown-item active bg-dark" href="#">O Enigma do Príncipe</a></li>
-                <li><a class="dropdown-item active bg-dark" href="#">Relíquias da Morte - Parte 1</a></li>
-                <li><a class="dropdown-item active bg-dark" href="#">Relíquias da Morte - Parte 2</a></li>
+          <div class="col-2">
+            <a class="logo" href="#">
+              <img src="./public/assets/harry-potter-logo.png" alt="">
+            </a>
+          </div>
+          
+          <div class="col-8">
+
+            <div class="navbar-collapse container-menu" id="navbarNav">
+
+              <ul class="navbar-nav menu justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Filmes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Equipe</a>
+                </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Equipe</a>
-            </li>
-          </ul>
+    
+            </div>
+
+          </div>
+
+          <div class="col-2">
+
+            <div class="container-nav-button">
+              <button type="button" class="btn btn-light btn-custon">Login</button>
+              <button type="button" class="btn btn-outline-light btn-custon">Cadastrar</button>
+            </div>
+
+          </div>
+
         </div>
-      </div>
-      
-      <form class="container-fluid">
-        <button class="btn btn-outline-success me-1" type="button">Cadastrar</button>
-        <button class="btn btn-outline-success me-2" type="button">Login</button>
-      </form>
 
     </nav>
       <!-- Fim do Menu -->
@@ -61,15 +62,29 @@
 
     <main>
 
+      <section>
+        <h2>Aqui deve ficar o banner!</h2>
+      </section>
+
+      <section>
+        <h2>Aqui deve ficar o sobre!</h2>
+      </section>
+
+      <section>
+        <h2>Aqui deve ficar o filmes!</h2>
+      </section>
+
+      <section>
+        <h2>Aqui deve ficar a equipe!</h2>
+      </section>
+
     </main>
 
     <footer>
 
     </footer>
- 
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 
   </body>
 </html>

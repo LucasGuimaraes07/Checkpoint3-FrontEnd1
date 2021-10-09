@@ -1,38 +1,69 @@
-body {
-
-    display: grid;
-   /*  grid-template-columns: 200px 1fr; */
-    grid-template-areas: 
-    'header header'
-    'main main'
-    'footer footer';
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Início do Menu */
 header{
-    grid-area: header;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    background-color:#212529;
+    max-width: 96px;
 
-        .logo{
-            padding: 20px;
-            margin: 20px;
-        }
+    nav{
+        padding: 10px 25px;
+    }
 
-        .btn{
-            color: white;
-            border-color: white;
-        }
+    .logo{
+        display: flex;
+        width: max-content;
+        height: max-content;
+        margin: 10px;
 
-        .btn:hover{
-            background-color: #706779;
-            border-color: none;
-            transition-duration: .3s;
-            transition-timing-function: ease-in-out;
+        img{
+            width: 180px;
+            height: 60px;
         }
+    }
+
+    .container-menu {
+        margin-right: 20px;
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            color: #fff;
+            gap: 20px;
+        }
+    }
+    
+
+    .container-nav-button {
+        display: flex;
+        gap: 20px;
+        margin-left: 20px;
+
+        .btn-custon {
+            min-width: 94px;
+        }
+    }
 }
-
 /* Fim do Menu */
+
+main {
+    margin-top: 96px;
+
+    /* Inicio da estilização do banner */
+
+    /* Fim da estilização do banner */
+
+    /* Inicio da estilização do sobre */
+
+    /* Fim da estilização do sobre */
+
+    /* Inicio da estilização do filmes */
+
+    /* Fim da estilização do filmes */
+
+    /* Inicio da estilização da equipe */
+
+    /* Fim da estilização da equipe */
+}
