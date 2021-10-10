@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Open+Sans:wght@300&display=swap');
+
+
+
+body{
+    /* Fontes:
+    font-family: 'Birthstone', cursive;
+    font-family: 'Open Sans', sans-serif;
+    */
+    /* paleta de cores*/
+    --cor1: #000000;
+    --cor2: #a552f3;
+    --cor3: #bd1818;
+    --cor4: #ffff00;
+    --cor5: #e9e5e5;
+    --cor6: #39edf0;
+    
+    
+
+    
+}
+
+.navbar-custom {
+    background-color: var(--cor1);
+}
+
+main{
+    width: 100%;
+    padding: 15px;
+    background-image: url(/public/assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end ;
+    justify-content: flex-start;
+    
+}
+
+form {
+
+    color: var(--cor1);
+    background-color: #e9e5e5cb;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    flex-wrap: wrap;   
+
+    font-weight: bold;
+      
+}
+
+form img {
+
+    width: 100px;
+}
+
+form legend {
+    font-family: 'Birthstone', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+.mb-3 {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    width: 80%;
+   
+}
+
+.form-control:hover {
+
+    padding: 10px ;
+}
+
+.btn-danger-custom{
+
+    background-color: var(--cor2);
+    border: 1px solid var(--cor2);
+}
+
+.btn-success-custom {
+
+    background-color: var(--cor2);
+    border: 1px solid var(--cor2);
+}
+@media (max-width: 675px) {
+
+    main{
+        align-items: center ;
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 430px) {
+
+    main {
+        background-image: none;
+        background-color: var(--cor1);
+    }
+}
