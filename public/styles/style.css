@@ -12,6 +12,9 @@ html {
 
 body {
   background-color: #242633;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 /* Início do Menu */
@@ -83,80 +86,59 @@ main {
 }
 
 main section .section-title {
-  margin-bottom: 40px;
+  margin: 40px 40px;
   color: #fff;
 }
 
 main .banner {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  color: white;
-  /* parallax */
-  background-attachment: fixed;
-  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-image: url(../assets/harry-potter-banner.jpg);
+  position: relative;
+  background-position: center top;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-size: contain;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
 }
 
-main .banner .texto {
-  width: 600px;
-  position: absolute;
-  top: 35%;
-  padding: 20px;
-  margin: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  z-index: 199;
-  font-size: 18px;
+main .banner .banner-content {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-main .banner button {
-  position: absolute;
-  top: 55%;
-  padding: 10px;
-  margin: 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  z-index: 199;
+main .banner .banner-content p {
+  width: 50%;
+  font-size: 24px;
+  text-shadow: 0 2px 2px #000;
 }
 
-main .banner button:hover {
-  background-color: #a552f3;
-  border: none;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+main .banner .banner-content button {
+  margin-top: 40px;
 }
 
 main .sobre {
-  background-color: #242633;
-  padding: 40px;
-  margin: 40px;
-  position: absolute;
-  top: 1000px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   color: white;
-  z-index: 200;
 }
 
-main .sobre .sobre h2 {
-  width: 1296px;
-}
-
-main .sobre .sobre p {
-  width: 900px;
+main .sobre p {
   font-size: 20px;
-}
-
-main .movies {
-  background-color: #242633;
-  position: absolute;
-  top: 1290px;
 }
 
 main .movies .movies-container {
