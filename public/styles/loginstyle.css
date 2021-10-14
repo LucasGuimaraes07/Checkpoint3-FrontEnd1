@@ -17,7 +17,7 @@ body{
     --cor6: #39edf0;
 
   
-    background-image: url(/public/assets/Harry-Potter-na-TV.jpg);
+    background-image: url(../public/assets/Harry-Potter-na-TV.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     
