@@ -163,7 +163,11 @@ main .sobre {
   justify-content: center;
   align-items: center;
 }
+main .sobre img{
 
+  width: 100%;
+
+}
 main .sobre p {
   text-align: center;
   font-size: 20px;
