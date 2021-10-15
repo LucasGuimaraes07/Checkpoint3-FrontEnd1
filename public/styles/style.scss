@@ -132,6 +132,26 @@ main {
     /* Fim da estilização do filmes */
 
     /* Inicio da estilização da equipe */
+    .team {
+        margin-top: 200px;
+        height: 50vh;
+        .team-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+            text-align: center;
 
+            p {
+                color: #fff;
+            }
+            .circle {
+                width: 150px;
+                border-radius: 50%;
+            }
+        }
+        
+    }
+    
     /* Fim da estilização da equipe */
 }
